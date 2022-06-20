@@ -2,12 +2,14 @@ package com.example.tipcalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.tipcalculator.databinding.ActivityMainBinding
 import java.text.NumberFormat
 
 
 class MainActivity : AppCompatActivity() {
 
+    private val TAG = "Main Activity"
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +19,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // setting the listener for the calculate button
-        binding.calculateButton.setOnClickListener { calcTip() }
+        binding.calculateButton.setOnClickListener {
+            Log.d(TAG, "Pressed the calculate button")
+            calcTip() }
     }
 
     /**
@@ -32,11 +36,15 @@ class MainActivity : AppCompatActivity() {
             else -> .15
         }
         // getting the amount of tip to give
-        var tipAmount = binding.tipAmount.text.toString().toDoubleOrNull()
-        if (tipAmount == null) {
+        val costOfService = binding.costOfService.text.toString().toDoubleOrNull()
+        if (costOfService == null) {
+            Log.d(TAG, "The tip amount is null")
             binding.tipAmount.text = ""
             return // returning is there is nothing
         }
+        // doing the multiplication of the Cost of Service
+        var tipAmount = costOfService * tipPercentage
+        Log.d(TAG, "The amount of tip before rounding is ${tipAmount}")
         // checking to see if we need to round up
         if(binding.roundUpSwitch.isChecked){
             tipAmount = kotlin.math.ceil(tipAmount)
