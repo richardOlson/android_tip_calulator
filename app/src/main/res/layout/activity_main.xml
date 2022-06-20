@@ -11,7 +11,8 @@
         android:id="@+id/cost_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:hint="Cost of Service"
+        android:gravity="center"
+        android:hint="@string/cost_of_sercice"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
