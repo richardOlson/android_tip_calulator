@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             else -> .15
         }
         // getting the amount of tip to give
-        val costOfService = binding.costOfService.text.toString().toDoubleOrNull()
+        val costOfService = binding.costOfServiceEditText.text.toString().toDoubleOrNull()
         if (costOfService == null) {
             Log.d(TAG, "The tip amount is null")
             binding.tipAmount.text = ""
