@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable-anydpi-v26/ic_launcher_foreground.xml" value="0.1585" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.1765" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable-v24/new_foreground.xml" value="0.155" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.156" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1765" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable/ic_round_up.xml" value="0.2265" />
+        <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable/ic_service.xml" value="0.2265" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable/ic_store.xml" value="0.1" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/drawable/new_launcher.xml" value="0.156" />
         <entry key="..\:/Users/rich/AndroidStudioProjects/TipCalculator/app/src/main/res/layout/activity_main.xml" value="0.4" />
